@@ -1,16 +1,174 @@
+@font-face {
+	font-family: 'C';
+	font-weight: 500;
+	src: url('/res/font/cr.ttf');
+}
+@font-face {
+	font-family: 'C';
+	font-weight: 900;
+	src: url('/res/font/cb.ttf');
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'C';
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.vector-box {
+  position: absolute;
+  width: 350px;
+  height: 125px;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
 }
 
-* {
-  box-sizing: border-box;
+.league-rank {
+  position: absolute;
+  width: 50px !important;
+  height: 50px !important;
+  z-index: 2;
+}
+
+.progress-bar {
+  position: absolute;
+  width: 82px !important;
+  height: 82px !important;
+  z-index: 1;
+}
+
+sub { vertical-align: text-bottom; }
+
+.t-24 { font-size: 24px; }
+
+.t-12 { font-size: 12px; }
+
+.t-light { color: #E2FCDE; }
+
+.t-medium { color: #9CCA95; }
+
+.t-dark { color: #5C8456; }
+
+.t-bold { font-weight: 900; }
+
+.t-reg { font-weight: 400; }
+
+#t-stats {
+  position: absolute;
+  left: 110px;
+  top: 20px;
+  width: 350px;
+  height: 125px;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  width: 320px;
+  height: 95px;
+  left: 15px;
+  top: 15px;
+  position: absolute;
+}
+
+.f-item {
+  height: 100%;
+}
+
+.img-out {
+  padding-left: 29px;
+  padding-top: 19px;
+  width: 71px;
+}
+
+.bar-out {
+  padding-left: 10px;
+  padding-top: 7px;
+}
+
+.text-stats {
+  height: 52%;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile_leaguestandingset {
+  display: flex;
+  width: 220px;
+  transform: scale(0.8);
+  justify-content: center;
+}
+
+#profile_leaguestandingset div {
+  position: relative;
+  text-align: center;
+  padding: 0.25em 1.5em;
+  margin: 0 0.15em;
+  display: inline-block;
+  z-index: 1;
+}
+
+#profile_leaguestandingset div:first-child:not(:last-child) {
+  text-align: right;
+  padding-right: 0.5em;
+}
+
+#profile_leaguestandingset div:last-child:not(:first-child) {
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+#profile_leaguestandingset div::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #0008;
+  clip-path: polygon(1.25em 0%, calc(100% - 1.25em) 0%, 100% 50%, calc(100% - 1.25em) 100%, 1.25em 100%, 0% 50%);
+}
+
+#profile_leaguestandingset div:first-child:not(:last-child)::before {
+  clip-path: polygon(1.25em 0%, 100% 0%, 100% 100%, 1.25em 100%, 0% 50%);
+}
+
+#profile_leaguestandingset div:last-child:not(:first-child)::before {
+  clip-path: polygon(0% 0%, calc(100% - 1.25em) 0%, 100% 50%, calc(100% - 1.25em) 100%, 0% 100%);
+}
+
+#profile_leaguestandingset div:last-child:not(:first-child)::after {
+  content: '';
+  position: absolute;
+  left: 0.25em;
+  top: 0.25em;
+  right: 0.35em;
+  bottom: 0.25em;
+  z-index: -1;
+  background: #162113;
+  clip-path: polygon(0% 0%, calc(100% - 1.05em) 0%, 100% 50%, calc(100% - 1.05em) 100%, 0% 100%);
+}
+
+#profile_leaguestandingset div h1 {
+  margin: 0;
+  color: #5C8456;
+  font-size: 0.7em;
+}
+
+#profile_leaguestandingset div p {
+  margin: 0;
+  margin-top: -0.2em;
+  color: #E2FCDE;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+#profile_leaguestandingset div p span {
+  font-weight: 500;
+  color: #5C8456;
 }
