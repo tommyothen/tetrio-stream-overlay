@@ -25,5 +25,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     next_rank: tetrioJson.data.user.league.next_rank,
     prev_at: tetrioJson.data.user.league.prev_at,
     next_at: tetrioJson.data.user.league.next_at,
+    username: tetrioJson.data.user.username,
   });
 }
