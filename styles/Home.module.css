@@ -1,5 +1,18 @@
+@font-face {
+	font-family: 'C';
+	font-weight: 500;
+	src: url('/res/font/cr.ttf');
+}
+@font-face {
+	font-family: 'C';
+	font-weight: 900;
+	src: url('/res/font/cb.ttf');
+}
+
 .container {
   padding: 0 2rem;
+  background-color: rgb(26, 24, 27);
+  color: rgb(232, 230, 227)
 }
 
 .main {
@@ -15,6 +28,7 @@
 .footer {
   display: flex;
   flex: 1;
+  flex-direction: column;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
@@ -26,6 +40,8 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  text-decoration: none;
+  color: rgb(200, 156, 236);
 }
 
 .title a {
@@ -54,15 +70,6 @@
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
