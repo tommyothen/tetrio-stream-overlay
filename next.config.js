@@ -10,6 +10,11 @@ module.exports = {
         source: '/users/:path*',
         destination: '/user/:path*',
         permanent: true,
+      },
+      {
+        source: '/user',
+        destination: '/',
+        permanent: true,
       }
     ]
   }
