@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           alignItems: 'center',
         }}>
           <p className={styles.description}>
-            Get started by entering your Tetr.io username below.
+            Get started by entering your TETR.IO username below.
           </p>
           <UserSearch router={router}/>
         </div>
@@ -49,6 +49,7 @@ const Home: NextPage = () => {
           Game, Rank Icons and Fonts by{' '}
           <Image src="/res/images/osk.svg" alt="osk Logo" width={45} height={14} />
         </a>
+        <p>Not affiliated with TETR.IO or osk.</p>
       </footer>
     </div>
   )
