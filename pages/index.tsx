@@ -27,7 +27,7 @@ const Home: NextPage = () => {
           alignItems: 'center',
         }}>
           <p className={styles.description}>
-            Get started by entering your Tetrio username below.
+            Get started by entering your Tetr.io username below.
           </p>
           <UserSearch router={router}/>
         </div>
