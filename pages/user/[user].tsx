@@ -11,7 +11,7 @@ export default function User() {
   const router = useRouter();
   const { user } = router.query;
 
-  const { data, error } = useSWR(`/api/user?id=${user}`, fetcher, { refreshInterval: 300e3});
+  const { data, error } = useSWR(`/api/user?id=${user}`, fetcher, { refreshInterval: 30e3 });
 
   if (error) return <div>failed to load</div>;
   if (!data) return <div>loading...</div>;
