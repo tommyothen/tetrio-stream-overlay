@@ -35,7 +35,7 @@ const Home: NextPage = () => {
 
       <footer className={styles.footer}>
         <a
-          href="https://github.com/dasushiasian"
+          href="https://github.com/tommyothen/tetrio-stream-overlay"
           target="_blank"
           rel="noopener noreferrer"
         >
